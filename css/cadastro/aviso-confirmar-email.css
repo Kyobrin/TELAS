@@ -1,0 +1,137 @@
+
+:root {
+    --cor-primaria: #0A0E3F;
+    --cor-secundaria: #322c5e;
+    --cor-gradient-inicio: #39336a;
+    --cor-gradient-fim: #1e1c50;
+    --cor-texto: #FFFFFF;
+    --cor-input: #e0e0e0;
+    --cor-destaque: #8A2BE2;
+    --cor-destaque2: #B94DD4;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-color: var(--cor-primaria);
+    height: 100vh;
+    width: 100vw;
+    overflow-x: hidden;
+}
+
+
+main{
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.imagem{
+    background: #060a3d url(/img/svgs/undraw_completed_38on.svg);
+    width: 350px;
+    height: 400px;
+    border-radius: 40px 0px 0px 40px;
+    background-position: center center;
+    background-size: contain;    
+    background-repeat: no-repeat;    
+}
+
+.confirmation-container {
+    width: 350px;
+    height: 400px;
+    text-align: center;
+    background-color: white;
+    border-radius: 0px 40px 40px 0px;
+    background: #0F144E;
+    padding: 20px;
+    max-width: 600px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    color: white;
+    transition: width .2s ;
+}
+
+.confirmation-icon {
+    font-size: 2.5rem;
+}
+
+h1 {
+    font-size: 1.5rem;
+    margin-top: 10px;
+}
+
+p {
+    font-size: 1.3rem;
+    margin-top: 10px;
+}
+
+.go-back-button {
+    background-color: #8A2BE2; 
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    margin-top: 20px;
+    transition: .3s;
+}
+
+.go-back-button:hover {
+    background-color: #6514b1; /* Cor do botão "Voltar" ao passar o mouse */
+}
+.reenviar-email{
+    font-size: 1rem;
+    display: flex;
+    
+    gap: 10px;
+    justify-content: center;
+    margin-top: -5px;
+}
+.reenviar-email span{
+    color: white;
+
+}
+.reenviar{
+    border: none;
+    outline: none;
+    background-color: transparent;
+
+    
+}
+.reenviar:hover{
+    text-decoration: underline;
+}
+
+@media (max-width: 1080px){
+    .confirmation-container{
+        width: 400px;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+    .reenviar-email {
+        font-size: 0.9rem;
+    }
+    footer{
+        height: 200px !important;
+    }
+
+
+}
+@media (max-width: 992px){
+    .imagem{
+        display: none;
+        
+    }
+    .confirmation-container{
+        border-radius: 40px;
+    }
+}

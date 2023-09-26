@@ -1,0 +1,43 @@
+
+    /* Botão de editar perfil */
+.editar-perfil{
+    display: flex;
+    align-items: center;
+    width: 30px;
+    height: 40px;
+    border-radius: 0px 4px 4px 0px;
+    background-color: #9e37ff;
+    text-transform: uppercase;
+    font-weight: bold;
+    position: absolute;
+    top: 60px;
+    color: transparent;
+    left: 800px;
+    border: none;
+    transition: width .3s ease, color .3s ease-in;
+   
+
+}
+.editar-perfil:hover{
+    width: 70px;
+    color: #fff;
+}
+.editar-perfil:hover i{
+    display: none;
+}
+.editar-perfil:focus{
+    outline: none;
+}
+    @media (max-width: 800px){
+        .editar-perfil{
+            left: 290px;
+            top: 20px;
+            text-align: center;
+            color: white;
+            width: 80px;
+        }
+        .editar-perfil i{
+            display: none;
+
+        }
+    }

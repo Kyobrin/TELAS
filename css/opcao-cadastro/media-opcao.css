@@ -1,0 +1,50 @@
+@charset "UTF-8";
+:root {
+    --cor-primaria: #0A0E3F;
+    --cor-secundaria: #322c5e;
+    --cor-gradient-inicio: #39336a;
+    --cor-gradient-fim: #1e1c50;
+    --cor-texto:#FFFFFF;
+    --cor-input: #e0e0e0;
+    --cor-destaque: #8A2BE2;
+    --cor-destaque2: #B94DD4;
+}
+
+@media screen and (max-width: 550px){
+    main{
+        width: 350px;
+    }
+}
+@media screen  and (min-width: 992px){
+
+    main{
+        height: 450px ; 
+        width: 600px;
+        font-size: 16px;
+        transition: width .3s, height .3s;
+
+
+    }
+    .container > h1 {
+        font-size: 2.5em;
+        margin-top: 50px;
+    }
+    main > p {
+
+        font-size: 16px;
+        margin-bottom: 60px;
+    }
+    .inputs > div{
+        text-indent: 1.4em;
+    }
+    .inputs > input + label::before{
+        width: 15px;
+        height: 15px;
+    }
+    .botao{
+        margin-top: 50px;
+    }
+    .botao > input{
+        width: 250px;
+    }
+}

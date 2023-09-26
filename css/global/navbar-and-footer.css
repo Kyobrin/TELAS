@@ -1,0 +1,224 @@
+*{
+  font-family: 'Poppins' Arial, Helvetica, sans-serif !important;
+}
+
+
+.navbar {
+    background-color: #251f72 !important;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 15px 0 !important;
+  }
+  
+  .navbar-brand img {
+    max-height: 50px;
+  }
+  
+  .navbar-toggler {
+    border: none;
+    background-color: transparent;
+  }
+  
+  .navbar-toggler-icon {
+    background-color: #251f72;
+  }
+  
+  .navbar-nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+  }
+  
+  .main-items {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .nav-item {
+    margin: 0 10px;
+    text-align: center;
+  }
+  .destaque-items{
+    transition: .2s ease;
+  }
+  .destaque-items:hover{
+    transform: scale(1.07) ;
+  }
+  #login{
+    background-color: #140F4B;
+    border-radius: 0.3em;
+    padding: 8px;
+    width: 111px;
+  }
+  #cadastro{
+    background-color: #901efa;
+    border-radius: 0.3em;
+    padding: 8px;
+    width: 111px;
+  }
+
+  .nav-link {
+    color: white !important;
+    font-size: 16px;
+    transition: color 0.2s;
+    
+  }
+
+    /* Alinhamento dos itens de login e cadastro */
+    .navbar-nav .login-register {
+      display: flex;
+      align-items: center;
+    }
+    .navbar-nav a{
+      display: inline-block;
+      padding: 15px;
+      position: relative;
+  }
+  .navbar-nav a::after{
+      content: "";
+      display: block;
+      height: 2px;
+      width: 0px;
+      background: #caf;
+      margin-top: 4px;
+      transition: .3s;
+      position: absolute;
+  }
+  .navbar-nav a:hover::after{
+      width: 85%;
+  }
+    
+    .login-register .nav-link {
+      color: white !important;
+      font-size: 14px;
+      margin-left: 20px;
+    }
+    
+    /* Logo centralizada */
+    .navbar-nav .navbar-brand {
+      margin: 0;
+      flex: 1;
+      text-align: center;
+    }
+    
+    /* Itens principais alinhados no centro */
+    .navbar-nav .main-items {
+      display: flex;
+      align-items: center;
+    }
+      /* Rodapé */
+      .footer {
+          position: relative;
+          background-color: #251f72 !important;
+          color: white !important;
+          padding: 20px !important;
+          text-align: center;
+          height: 200px;
+  
+        }
+        h4{
+          font-size: 1rem;
+        }
+        .termos{
+          position: absolute;
+          left: 10px;
+          text-align: left;
+        }
+        .termos p {
+          font-size: 1rem;
+        }
+        
+        .social-icon {
+          font-size: 24px;
+          margin: 0 10px;
+        }
+        .fab{
+          color: #9e37ff;
+
+        }
+        .fab:hover{
+          color: #901efa;
+
+        }
+        
+        #foto-perfil{
+          cursor: pointer;
+          margin-left: 100px;
+      
+      }
+      .fas{
+        margin-right: 0.5rem;
+
+      }
+      .connections li{
+        list-style: none;
+      }
+      .fa-edit, .fa-camera{
+          color: #0F144E;
+      }
+      .dropdown {
+          position: relative;
+          display: inline-block;
+      }
+      .container{
+        padding-top: 30px;
+      }
+      .dropdown-toggle {
+      
+          color: #fff !important;
+          border: none !important;
+          border-radius: 50% !important;
+          padding: 6px !important;
+          cursor: pointer !important;
+          transition: 0.3s !important;
+      }
+      .dropdown-toggle:hover{
+          color: #9e37ff !important;
+      }
+      
+      /* Estilize o dropdown-menu para que ele contraste com o fundo */
+      .dropdown-menu {
+          
+          background-color: #0F144E !important;
+          border: none !important;
+          border-radius: 5px !important;
+          box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2) !important;
+          color: #fff !important;
+      }
+      
+      /* Estilize os links do dropdown */
+      .dropdown-item {
+          color: #fff !important;
+      }
+      
+      /* Adicione cor de fundo e estilo de hover para os links */
+      .dropdown-item:hover {
+          background-color: #9e37ff !important;
+          color: #fff !important;
+      }
+      .btn-outline-success{
+          background-color: #0F144E !important;
+          border: 2px solid #0F144E !important;
+          transition: 0.2s ease;
+          color: #ccc !important;
+      }
+          .btn-outline-success:hover{
+              border: none !important;
+              background-color: #9e37ff !important;
+          }
+@media (max-width: 1280px ){
+
+  .footer{
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  .termos{
+    position: inherit;
+    font-size: 1rem;
+    text-align: center;
+
+  }
+}

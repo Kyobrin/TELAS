@@ -1,0 +1,109 @@
+@charset "UTF-8";
+:root {
+    --cor-primaria: #0A0E3F;
+    --cor-secundaria: #322c5e;
+    --cor-gradient-inicio: #39336a;
+    --cor-gradient-fim: #1e1c50;
+    --cor-texto:#FFFFFF;
+    --cor-input: #e0e0e0;
+    --cor-destaque: #8A2BE2;
+    --cor-destaque2: #B94DD4;
+}
+
+@media screen  and (min-width: 992px){
+    body{
+        overflow-x: hidden;
+    }
+    header{
+        width: 100vw;
+    }
+    footer{
+        width: 100vw;
+    }
+    section#login{
+        width: 900px;
+        height: 600px;
+        border-radius: 40px;
+    }
+    #login > div#imagem1{
+        background: #060a3d url(/img/svgs/undraw_reminder_re_fe15.svg);
+        width: 350px;
+        height: 600px;
+        background-position: center center;
+        background-size: contain;    
+        background-repeat: no-repeat;    
+        border-radius: 40px 0px 0px 40px;
+        margin-left: -100px;
+        margin-right: 60px;
+ 
+    }
+    .inputs label{
+        display: block;
+        margin: 5px;
+       
+    }
+    #logo{
+        display: block;
+        margin: auto;
+        margin-bottom: -30px;
+        margin-top: -100px;
+    }
+    #form #titulo {
+        font-size: 2em;
+    
+        margin-bottom: 40px;
+    }
+    #botao {
+        display: block;
+        width: 250px;
+        transition: .2s ease;
+        margin-top: -10px;
+        margin-bottom: 20px;
+        margin-left: 100px;
+        height: 40px;
+        font-size: 1em;
+    }
+    #form .input {
+        width: 450px;
+        padding: 15px;
+        border-radius: 10px;
+        border: none;
+        outline: none;
+        color: black;
+        font-size: 16px;
+        border: 1px solid var(--cor-input);
+        height: 45px;
+        text-indent: 1.5em;
+        border: 2px solid var(--cor-input);
+        transition: border-color 0.2s ease-in-out;
+
+    }
+    .input:focus {
+        box-shadow: 0px 0px 3px 1px var(--cor-destaque);
+        border-color: var(--cor-destaque);
+    }
+    .input-wrapper > input::placeholder{
+        text-indent: 1.5em;
+    }
+    .input-wrapper {
+        position: relative;
+        display: inline-block;
+    }
+    
+    .input-icon {
+        position: absolute;
+        left: 7px;
+        top: 7px;
+        width: 30px;
+        height: 30px;
+        border-right: 1px solid black;
+       padding: 3px;
+    }
+    #esqueceu{
+        display: inline-block;
+        position: relative;
+        right: 150px;
+        margin-bottom: 30px;
+    }
+
+}

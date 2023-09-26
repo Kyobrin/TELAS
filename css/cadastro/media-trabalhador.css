@@ -1,0 +1,98 @@
+@charset "UTF-8";
+:root {
+    --cor-primaria: #0A0E3F;
+    --cor-secundaria: #322c5e;
+    --cor-gradient-inicio: #39336a;
+    --cor-gradient-fim: #1e1c50;
+    --cor-texto:#FFFFFF;
+    --cor-input: #e0e0e0;
+    --cor-destaque: #8A2BE2;
+    --cor-destaque2: #B94DD4;
+}
+
+@media screen  and (min-width: 992px){
+    section#cadastro{
+        width: 900px;
+        height: 600px;
+        border-radius: 40px;
+       
+        
+        
+    }
+    #cadastro > div#imagem1{
+        background: #060a3d url(/img/svgs/undraw_projections_re_ulc6.svg);
+        width: 350px;
+        height: 600px;
+        background-position: center center;
+        background-size: contain;    
+        background-repeat: no-repeat;    
+        border-radius: 40px 0px 0px 40px;
+        margin-left: -100px;
+        margin-right: 60px;
+ 
+ 
+     }
+     #logo{
+        display: block;
+        margin: auto;
+        width: 150px;
+        height: 150px;
+        margin-bottom: -40px;
+        margin-top: -40px;
+    }
+    #form h1 {
+        font-size: 1.5em;
+        margin-top: 10px;
+        margin-bottom: 20px;
+    }
+    .label{
+        text-align: left;
+        gap: 5px;
+    }
+    #botao {
+        width: 200px;
+        position: relative;
+        transition: .2s ease;
+        margin-bottom: 20px;
+        height: 40px;
+        font-size: 1em;
+    }
+    #form .input {
+        width: 450px;
+        padding: 15px;
+        border-radius: 10px;
+        border: none;
+        outline: none;
+        color: black;
+        font-size: 16px;
+        border: 1px solid var(--cor-input);
+        height: 45px;
+    
+        text-indent: 1.5em;
+        border: 2px solid var(--cor-input);
+        transition: border-color 0.2s ease-in-out;
+
+    }
+    .input:focus {
+        box-shadow: 0px 0px 3px 1px var(--cor-destaque);
+        border-color: var(--cor-destaque);
+    }
+    .input-wrapper > input::placeholder{
+        text-indent: 1.5em;
+    }
+    .input-wrapper {
+        position: relative;
+        display: inline-block;
+    }
+    
+    .input-icon {
+        position: absolute;
+        
+        left: 5px;
+        top: 7px;
+        width: 30px;
+        height: 30px;
+        border-right: 1px solid black;
+       padding: 5px;
+    }
+}

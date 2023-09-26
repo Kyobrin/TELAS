@@ -1,0 +1,123 @@
+:root {
+    --cor-primaria: #0A0E3F;
+    --cor-secundaria: #322c5e;
+    --cor-gradient-inicio: #39336a;
+    --cor-gradient-fim: #1e1c50;
+    --cor-texto:#FFFFFF;
+    --cor-input: #e0e0e0;
+    --cor-destaque: #8A2BE2;
+    --cor-destaque2: #B94DD4;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-color: var(--cor-primaria);
+    height: 100vh;
+    width: 100vw;
+    overflow-x: hidden;
+}
+main{
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    transition: width 0.3s, height .3s;
+
+
+}
+section#cadastro{
+    width: 350px;
+    height: 500px;
+    background: #0F144E;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    border-radius: 10px;
+    transition: width 0.3s, height .3s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    
+}
+
+
+#logo{
+    width: 150px;
+    height: 150px;
+    margin-top: -50px;
+    margin-bottom: -30px;
+
+   
+}
+
+
+.label{
+  display: block;
+  margin: 6px;
+  text-align: start;
+}
+
+.input{
+    width: 300px;
+    height: 30px;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+}
+.input-wrapper > input::placeholder, .input{
+    text-indent: 3em;
+}
+
+.input-wrapper {
+    position: relative;
+    display: inline-block;
+}
+
+.input-icon {
+    position: absolute;
+    left: 6px;
+    top: 2px;
+    width: 25px;
+    height: 25px;
+    border-right: 1px solid black;
+   padding: 3px;
+}
+#isenha{
+    margin-bottom: 10px;
+}
+#form h1{
+    font-size: 1.1em;
+    margin-bottom: 20px;
+}
+#form  a {
+    color: white;
+    text-decoration: none;
+}
+#form a:hover{
+    text-decoration: underline;
+}
+
+#botao {
+   width: 100px;
+    margin: 20px 0px;
+    height: 30px;
+    border-radius: 10px;
+    background-color: var(--cor-destaque);
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: .2s ease;
+    
+}
+#botao:hover{
+    background-color: var(--cor-destaque2);
+}
